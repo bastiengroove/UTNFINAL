@@ -1,0 +1,632 @@
+lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width,initial-scale=1" name="viewport">
+        <title>Bastien Groove</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <link href="assets/img/favicon1.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <link href="assets/fonts/spacex.ttf" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <script defer="defer" src="/static/js/main.52305a01.js"></script>
+        <link href="/static/css/main.f855e6bc.css" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <h1>
+                    <a href="index.html">Bastien Groove</a>
+                </h1>
+                <h2>
+                    Manager <span>Run Records</span>
+                </h2>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li>
+                            <a class="nav-link active" href="#header">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#about">Novedades</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#resume">Experiencia</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#services">Musica</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#portfolio">Lanzamientos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <div class="social-links">
+                    <a href="https://soundcloud.com/bastiengroove" class="instagram" title="SounCloud" target="_blank">
+                        <i class="bi bi-cloud-fog2"></i>
+                    </a>
+                    <a href="https://www.instagram.com/bastiengrooveofficial/" class="instagram" title="Instagram" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.beatport.com/artist/bastien-groove/443194" class="instagram" title="Beatport" target="_blank">
+                        <i class="bi bi-bag-heart"></i>
+                    </a>
+                    <a href="https://podcasts.apple.com/mx/podcast/bastien-groove-danger-beats/id1551501982/" class="instagram" title="Apple" target="_blank">
+                        <i class="bi bi-apple"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCACwVIgkPoHzxEtNmsvEtjQ" class="instagram" title="YouTube" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section id="about" class="about">
+            <div class="about-me container">
+                <div class="section-title">
+                    <h2>Novedades</h2>
+                    <p></p>
+                </div>
+                <!doctype html>
+                <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width,initial-scale=1">
+                        <title>Novedades</title>
+                    </head>
+                    <body>
+                        <h1>Novedades</h1>
+                        <div id="novedades-container"></div>
+                        <script>
+                            fetch("http://localhost:3000/api/novedades").then((e => e.json())).then((e => {
+                                const n = document.getElementById("novedades-container");
+                                e.forEach((e => {
+                                    const t = document.createElement("div");
+                                    t.innerHTML = `\n            <h2>${e.titulo}</h2>\n            <p>${e.subtitulo}</p>\n            <p>${e.cuerpo}</p>\n            ${e.imagen ? `<img src="${e.imagen}" alt="Novedad">` : ""}\n          `,
+                                    n.appendChild(t)
+                                }
+                                ))
+                            }
+                            )).catch((e => {
+                                console.error("Error fetching novedades:", e)
+                            }
+                            ))
+                        </script>
+                    </body>
+                </html>
+            </div>
+        </section>
+        <section id="resume" class="resume">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Experiencia</h2>
+                    <p>Revisa mi experiencia</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Software & DJ Setup Skills</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Pioneer</h4>
+                            <p></p>
+                            <ul>
+                                <li>Rekordbox Software</li>
+                                <li>DDJ SB / DDJ SB2</li>
+                                <li>DDJ 400 / DDJ 400 FLX4</li>
+                                <li>DDJ-FLX6</li>
+                                <li>DDJ-800</li>
+                                <li>XDJ-XZ-N</li>
+                                <li>XDJ-RR</li>
+                                <li>XDJ-RX1</li>
+                                <li>CDJ-350</li>
+                                <li>CDJ-3000</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Native Instruments</h4>
+                            <p></p>
+                            <ul>
+                                <li>TRAKTOR PRO 3 / TRAKTOR DJ 2 Software</li>
+                                <li>TRAKTOR KONTROL S2 MK3</li>
+                                <li>TRAKTOR KONTROL S3 MK3</li>
+                                <li>TRAKTOR KONTROL S4 MK3</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>DENON</h4>
+                            <p></p>
+                            <ul>
+                                <li>DJ PRIME GO</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Performance Club DJ</h3>
+                        <div class="resume-item">
+                            <h4>Pacha Club</h4>
+                            <p>
+                                <em>Buenos Aires, Capital Federal. Arg.</em>
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com/pachaba_official/" class="instagram" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Club Bahrein</h4>
+                            <p>
+                                <em>Buenos Aires, Capital Federal. Arg.</em>
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com/clubbahreinoficial/" class="instagram" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Privilige Bs As</h4>
+                            <p>
+                                <em>Buenos Aires, Capital Federal. Arg.</em>
+                            </p>
+                            <p>
+                                <a href="https://es.foursquare.com/v/privilege-ba/4b8b13dff964a520cf9132e3/" class="instagram" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Menta Club</h4>
+                            <p>
+                                <em>Buenos Aires, Capital Federal. Arg.</em>
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com/mentaclub/?hl=es/" class="instagram" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Jet Club</h4>
+                            <p>
+                                <em>Buenos Aires, Capital Federal. Arg.</em>
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com/jetdiscopub/" class="instagram" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Meet Club</h4>
+                            <p>
+                                <em>Buenos Aires, Capital Federal. Arg.</em>
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com/meetnightclub/" class="instagram" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Groove Selections</h4>
+                            <p>
+                                <em>Buenos Aires, Ramos Mejia. Arg.</em>
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com/grooveselections/" class="instagram" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Plataformas</h2>
+                    <p>DJ Sets</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="icon-box">
+                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1758658644&color=%23050404&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            <div style="font-size:10px;color:#ccc;line-break:anywhere;word-break:normal;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-family:Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight:100">
+                                <a href="https://soundcloud.com/bastiengroove" title="Bastien Groove" target="_blank" style="color:#ccc;text-decoration:none">Bastien Groove</a>
+                                · <a href="https://soundcloud.com/bastiengroove/bastien-groove-set-after-house-febrero-24" title="Bastien Groove - Set After House Febrero 24" target="_blank" style="color:#ccc;text-decoration:none">Bastien Groove - Set After House Febrero 24</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                <div class="icon-box">
+                                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1387282435&color=%23050404&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                    <div style="font-size:10px;color:#ccc;line-break:anywhere;word-break:normal;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-family:Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight:100">
+                                        <a href="https://soundcloud.com/bastiengroove" title="Bastien Groove" target="_blank" style="color:#ccc;text-decoration:none">Bastien Groove</a>
+                                        · <a href="https://soundcloud.com/bastiengroove/bastien-groove-december-2023" title="Bastien Groove - December 2022" target="_blank" style="color:#ccc;text-decoration:none">Bastien Groove - December 2022</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                        <div class="icon-box">
+                                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1493401726&color=%23050404&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                            <div style="font-size:10px;color:#ccc;line-break:anywhere;word-break:normal;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-family:Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight:100">
+                                                <a href="https://soundcloud.com/bastiengroove" title="Bastien Groove" target="_blank" style="color:#ccc;text-decoration:none">Bastien Groove</a>
+                                                · <a href="https://soundcloud.com/bastiengroove/bastien-groove-set" title="Bastien Groove  -  Danger Beats Episode 13" target="_blank" style="color:#ccc;text-decoration:none">Bastien Groove - Danger Beats Episode 13</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Lanzamientos</h2>
+                    <p>Singles & EP´S</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters"></ul>
+                    </div>
+                </div>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio1.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio2.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio3.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio4.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio5.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio6.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio7.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio9.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio9.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio10.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio10.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio14.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio14.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio8.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio8.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio15.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio15.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio12.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio12.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio11.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio11.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio13.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio13.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio17.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio17.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio16.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio16.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio18.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio18.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio19.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio19.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio20.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio20.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portafolio21.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portafolio21.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                        <i class="bx bx-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contacto</h2>
+                    <p>Contáctame</p>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="info-box">
+                            <i class="bx bx-map"></i>
+                            <h3>Ciudad</h3>
+                            <p>Buenos Aires, CABA. Argentina</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+                        <div class="info-box">
+                            <i class="bx bx-share-alt"></i>
+                            <h3>Redes Sociales y Más</h3>
+                            <div class="social-links">
+                                <a href="https://soundcloud.com/bastiengroove" class="instagram" title="SounCloud" target="_blank">
+                                    <i class="bi bi-cloud-fog2"></i>
+                                </a>
+                                <a href="https://www.instagram.com/bastiengrooveofficial/" class="instagram" title="Instagram" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://www.beatport.com/artist/bastien-groove/443194" class="instagram" title="Beatport" target="_blank">
+                                    <i class="bi bi-bag-heart"></i>
+                                </a>
+                                <a href="https://podcasts.apple.com/mx/podcast/bastien-groove-danger-beats/id1551501982/" class="instagram" title="Apple" target="_blank">
+                                    <i class="bi bi-apple"></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCACwVIgkPoHzxEtNmsvEtjQ" class="instagram" title="YouTube" target="_blank">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                    <div class="info-box">
+                        <i class="bx bx-envelope"></i>
+                        <h3>Correo</h3>
+                        <p>bastiengroove@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                    <div class="info-box">
+                        <i class="bx bx-phone-call"></i>
+                        <h3>Cel.</h3>
+                        <p>+54 1155879340</p>
+                    </div>
+                </div>
+            </div>
+            <form action="" method="POST" role="form" class="php-email-form mt-4" name="FormSubmit">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input name="name" class="form-control" id="name" placeholder="Escribe tu Nombre">
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Escribe tu Correo Electrónico">
+                        <input type="hidden" name="_captcha" value="false">
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Deja tu Mensaje" id="message"></textarea>
+                </div>
+                <div class="my-3">
+                    <div class="loading" style="display:none" id="load">Loading</div>
+                    <div class="error-message" style="display:none" id="error">Error al enviar correo!</div>
+                    <div class="sent-message" style="display:none" id="success">El mensaje ha sido enviado. Gracias!</div>
+                </div>
+                <div class="text-center">
+                    <button type="button" onclick="SendInfo()">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <div class="credits"></div>
+        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/sendmail.js"></script>
+    </body>
+</html>
